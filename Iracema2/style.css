@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fff;
+    color: #234d20;
+}
+header {
+    background: #234d20;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #bcdac6;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: #c8facc;
+}
+section {
+    padding: 30px 10%;
+    border-bottom: 1px solid #c1dbc1;
+}
+section h2 {
+    color: #267326;
+}
+form {
+    background: #e7f9e8;
+    padding: 15px;
+    border-radius: 6px;
+    max-width: 400px;
+    margin-top: 10px;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #a0d9a1;
+    border-radius: 3px;
+    resize: vertical;
+}
+button {
+    background: #267326;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button:hover {
+    background: #388e3c;
+}
+footer {
+    background: #234d20;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+@media (max-width: 600px) {
+    section {
+        padding: 20px 4%;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
