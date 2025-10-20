@@ -129,14 +129,16 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(45, 80, 22, 0.8), rgba(74, 124, 89, 0.8)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%234a7c59" width="1200" height="600"/><circle fill="%23ffffff" opacity="0.1" cx="200" cy="150" r="80"/><circle fill="%23ffffff" opacity="0.1" cx="800" cy="300" r="120"/><circle fill="%23ffffff" opacity="0.1" cx="1000" cy="100" r="60"/></svg>');
+            background:
+                linear-gradient(rgba(45, 80, 22, 0.6), rgba(74, 124, 89, 0.6)),
+                url('img2/iracema.png') no-repeat center center/cover;
             background-size: cover;
             background-position: center;
             color: white;
             text-align: center;
             padding: 6rem 2rem 4rem;
         }
+
 
         .hero-content {
             max-width: 800px;
@@ -275,22 +277,36 @@
         }
 
         .service-icon {
-            font-size: 3rem;
-            color: #4a7c59;
-            margin-bottom: 1rem;
-        }
+          font-size: 3rem;         /* pode deixar ou remover */
+          color: #4a7c59;          /* não afeta imagem, mas mantém se voltar a usar ícones */
+          margin-bottom: 1rem;
+            
+          display: flex;           /* centraliza a imagem */
+          justify-content: center;
+          align-items: center;
+            }
+
+        .service-icon img {
+            width: 60px;             /* controla o tamanho */
+            height: 60px;
+            object-fit: contain;     /* evita distorção */
+            }
+
 
         .service-card h4 {
             color: #2d5016;
             margin-bottom: 1rem;
         }
 
-        /* Calendar Section */
+        /* Calendar Section */ /*editado*/ 
         .calendar-container {
             background: white;
             border-radius: 15px;
             padding: 2rem;
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+
         }
 
         .calendar-header {
@@ -614,17 +630,23 @@
                     </div>
                     <div class="services-grid">
                         <div class="service-card">
-                            <div class="service-icon">🏆</div>
+                            <div class="service-icon">
+                            <img src="img2/trofeu.jpg" alt="Ícone de troféu">
+                            </div>
                             <h4>Excelência Acadêmica</h4>
                             <p>Mais de 30 anos formando cidadãos preparados para o futuro com ensino de qualidade.</p>
                         </div>
                         <div class="service-card">
-                            <div class="service-icon">👥</div>
+                            <div class="service-icon">
+                            <img src = "img2/comunidade_escolar.jpg" alt="Icone de comunidade">
+                            </div>
                             <h4>Comunidade Escolar</h4>
                             <p>Mais de 500 alunos, 40 professores e uma equipe dedicada ao desenvolvimento educacional.</p>
                         </div>
                         <div class="service-card">
-                            <div class="service-icon">🌟</div>
+                            <div class="service-icon">
+                            <img src = "img2/estrela.jpg" alt = "icone de estrela "> 
+                            </div>
                             <h4>Projetos Especiais</h4>
                             <p>Feira de ciências, apresentações culturais e projetos que estimulam a criatividade.</p>
                         </div>
@@ -641,13 +663,17 @@
                     </div>
                     <div class="services-grid">
                         <div class="service-card">
-                            <div class="service-icon">📅</div>
+                            <div class="service-icon">
+                            <img src="img2/calendario.jpg" alt="Ícone de calendário">
+                            </div>
                             <h4>Matrículas 2025</h4>
                             <p>Período de matrículas para o ano letivo de 2025 já está aberto. Venha fazer parte da nossa família!</p>
                         </div>
                        
                         <div class="service-card">
-                            <div class="service-icon">🏅</div>
+                            <div class="service-icon"> 
+                            <img src="img2/medalha.png" alt="Ícone de medalha">
+                            </div>
                             <h4>Olimpíada de Matemática</h4>
                             <p>Nossos alunos conquistaram medalhas na Olimpíada Brasileira de Matemática. Parabéns!</p>
                         </div>
